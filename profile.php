@@ -49,15 +49,15 @@ if (isset($_GET['username'])) {
             }
         }
         if (isset($_GET['postid'])) {
-            if (!DB::query('SELECT user_id FROM post_likes WHERE post_id=:post_id AND user_id=:user_id', array(':post_id'=>$_GET['postid'], ':user_id'=>$userid))) {
-                DB::query('UPDATE posts SET likes=likes+1 WHERE id=:post_id', array(':post_id'=>$_GET['postid']));
+            if (!DB::query('SELECT user_id FROM post_likes WHERE post_id=:post-id AND user_id=:user_id', array(':post_id'=>$_GET['postid'], ':user_id'=>$userid))) {
+                DB::query('UPDATE posts SET likes=likes+1 WHERE id=:postid', array(':post_id'=>$_GET['postid']));
                 DB::query('INSERT INTO post_likes (post_id,user_id) VALUES (:postid, :userid)', array(':post_id'=>$_GET['postid'], ':user_id'=>$userid));
             } else {
-                DB::query('UPDATE posts SET likes=likes-1 WHERE id=:posti_d', array(':post_id'=>$_GET['postid']));
-                DB::query('DELETE FROM post_likes WHERE post_id=:post-id AND user_id=:userid', array(':post_id'=>$_GET['postid'], ':user_id'=>$userid));
+                DB::query('UPDATE posts SET likes=likes-1 WHERE id=:postid', array(':post_id'=>$_GET['postid']));
+                DB::query('DELETE FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':post_id'=>$_GET['postid'], ':user_id'=>$userid));
             }
         }
-        $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:user_id ORDER BY id DESC', array(':user_id'=>$userid));
+        $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:userid ORDER BY id DESC', array(':userid'=>$userid));
         $posts = "";
         foreach($dbposts as $p) {
             $posts .= htmlspecialchars($p['body'])."
