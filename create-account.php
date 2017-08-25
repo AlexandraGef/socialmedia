@@ -18,8 +18,12 @@ if(isset($_POST['createaccount']))
             if (preg_match('/[a-zA-Z0-9_]+/', $username)) {
                 if (strlen($password) >= 6 && strlen($password) <= 60) {
                     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        if (!DB::query('SELECT email FROM users WHERE email=:email', array(':email'=>$email))) {
                         DB::query('INSERT INTO users (username, password,email) VALUES (:username, :password, :email)', array(':username'=>$username, ':password'=>password_hash($password, PASSWORD_BCRYPT), ':email'=>$email));
                         echo "Gratulujemy dołączyłeś do Naszego grona użytkowników !";
+                        } else {
+                            echo 'Email jest w użyciu!';
+                        }
                     } else {
                         echo 'Nieprawidłowy email!';
                     }
