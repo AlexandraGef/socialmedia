@@ -26,30 +26,7 @@ class Post {
             DB::query('DELETE FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$postId, ':userid'=>$likerId));
         }
     }
-    public static function displayPosts($userid, $username, $loggedInUserId) {
-        $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:userid ORDER BY id DESC', array(':userid'=>$userid));
-        $posts = "";
-        foreach($dbposts as $p) {
-            if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$p['id'], ':userid'=>$loggedInUserId))) {
-                $posts .= "<img src='".$p['postimg']."'>".htmlspecialchars($p['body'])."
-                                <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='like' value='Lubię'>
-                                        <span>".$p['likes']." polubień</span>
-                                </form>
-                                <hr /></br />
-                                ";
-            } else {
-                $posts .= "<img src='".$p['postimg']."'>".htmlspecialchars($p['body'])."
-                                <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='unlike' value='Nie lubię'>
-                                        <span>".$p['likes']." polubień</span>
-                                </form>
-                                <hr /></br />
-                                ";
-            }
-        }
-        return $posts;
-    }
+
     public static function createImgPost($postbody, $loggedInUserId, $profileUserId) {
         if (strlen($postbody) > 160) {
             die('Nieprawidłowa długość postu!');
@@ -61,6 +38,42 @@ class Post {
         } else {
             die('Nieprawidłowy użytkownik!');
         }
+    }
+    public static function link_add($text) {
+        $text = explode(" ", $text);
+        $newstring = "";
+        foreach ($text as $word) {
+            if (substr($word, 0, 1) == "@") {
+                $newstring .= "<a href='profil.php?username=".substr($word, 1)."'>".htmlspecialchars($word)."</a> ";
+            } else {
+                $newstring .= htmlspecialchars($word)." ";
+            }
+        }
+        return $newstring;
+    }
+    public static function displayPosts($userid, $username, $loggedInUserId) {
+        $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:userid ORDER BY id DESC', array(':userid'=>$userid));
+        $posts = "";
+        foreach($dbposts as $p) {
+            if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$p['id'], ':userid'=>$loggedInUserId))) {
+                $posts .= "<img src='".$p['postimg']."'>".self::link_add($p['body'])."
+                                <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
+                                        <input type='submit' name='like' value='Like'>
+                                        <span>".$p['likes']." likes</span>
+                                </form>
+                                <hr /></br />
+                                ";
+            } else {
+                $posts .= "<img src='".$p['postimg']."'>".self::link_add($p['body'])."
+                                <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
+                                        <input type='submit' name='unlike' value='Unlike'>
+                                        <span>".$p['likes']." likes</span>
+                                </form>
+                                <hr /></br />
+                                ";
+            }
+        }
+        return $posts;
     }
 }
 ?>
