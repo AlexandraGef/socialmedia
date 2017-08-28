@@ -11,8 +11,10 @@ class Post {
         if (strlen($postbody) > 160 || strlen($postbody) < 1) {
             die('Nieprawidłowa długość postu!');
         }
+        $topics = self::getTopics($postbody);
+
         if ($loggedInUserId == $profileUserId) {
-            DB::query('INSERT INTO posts (body,posted_at,user_id, likes) VALUES (:body, NOW(), :userid, 0)', array(':body'=>$postbody, ':userid'=>$profileUserId));
+            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:body, NOW(), :userid, 0,\'\',:topics)', array(':body'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
         } else {
             die('Nieprawidłowy użytkownik!');
         }
@@ -31,13 +33,25 @@ class Post {
         if (strlen($postbody) > 160) {
             die('Nieprawidłowa długość postu!');
         }
+        $topics = self::getTopics($postbody);
         if ($loggedInUserId == $profileUserId) {
-            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg) VALUES (:postbody, NOW(), :userid, 0, \'\')', array(':postbody'=>$postbody, ':userid'=>$profileUserId));
+            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:postbody, NOW(), :userid, 0, \'\', \'\')', array(':postbody'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
             $postid = DB::query('SELECT id FROM posts WHERE user_id=:userid ORDER BY ID DESC LIMIT 1;', array(':userid'=>$loggedInUserId))[0]['id'];
             return $postid;
         } else {
             die('Nieprawidłowy użytkownik!');
         }
+    }
+
+    public static function getTopics($text) {
+        $text = explode(" ", $text);
+        $topics = "";
+        foreach ($text as $word) {
+            if (substr($word, 0, 1) == "#") {
+                $topics .= substr($word, 1).",";
+            }
+        }
+        return $topics;
     }
     public static function link_add($text) {
         $text = explode(" ", $text);
@@ -45,12 +59,15 @@ class Post {
         foreach ($text as $word) {
             if (substr($word, 0, 1) == "@") {
                 $newstring .= "<a href='profil.php?username=".substr($word, 1)."'>".htmlspecialchars($word)."</a> ";
+            } else if (substr($word, 0, 1) == "#") {
+                $newstring .= "<a href='topics.php?topic=".substr($word, 1)."'>".htmlspecialchars($word)."</a> ";
             } else {
                 $newstring .= htmlspecialchars($word)." ";
             }
         }
         return $newstring;
     }
+
     public static function displayPosts($userid, $username, $loggedInUserId) {
         $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:userid ORDER BY id DESC', array(':userid'=>$userid));
         $posts = "";

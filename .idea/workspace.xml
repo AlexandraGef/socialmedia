@@ -34,23 +34,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+            <state relative-caret-position="840">
+              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1503924620726" expanded="true" signature="381:464" ph="INSERT INTO posts... " />
-                <marker date="1503924620726" expanded="true" signature="682:754" ph="SELECT user_... post_likes" />
-                <marker date="1503924620726" expanded="true" signature="831:878" ph="UPDATE posts... " />
-                <marker date="1503924620726" expanded="true" signature="932:999" ph="INSERT INTO post_likes... " />
-                <marker date="1503924620726" expanded="true" signature="1091:1138" ph="UPDATE posts... " />
-                <marker date="1503924620726" expanded="true" signature="1192:1256" ph="DELETE FROM " />
-                <marker date="1503924620726" expanded="true" signature="1582:1683" ph="INSERT INTO posts... " />
-                <marker date="1503924620726" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
-                <marker date="1503924620726" expanded="true" signature="2552:2610" ph="SELECT * FRO... posts" />
-                <marker date="1503924620726" expanded="true" signature="2724:2796" ph="SELECT post_... post_likes" />
+                <marker date="1503925423354" expanded="true" signature="428:539" ph="INSERT INTO posts... " />
+                <marker date="1503925423354" expanded="true" signature="460:538" ph="INSERT INTO posts... " />
+                <marker date="1503925423354" expanded="true" signature="460:539" ph="INSERT INTO posts... " />
+                <marker date="1503925423354" expanded="true" signature="777:849" ph="SELECT user_... post_likes" />
+                <marker date="1503925423354" expanded="true" signature="926:973" ph="UPDATE posts... " />
+                <marker date="1503925423354" expanded="true" signature="1027:1094" ph="INSERT INTO post_likes... " />
+                <marker date="1503925423354" expanded="true" signature="1186:1233" ph="UPDATE posts... " />
+                <marker date="1503925423354" expanded="true" signature="1287:1351" ph="DELETE FROM " />
+                <marker date="1503925423354" expanded="true" signature="1723:1788" ph="INSERT INTO posts... " />
+                <marker date="1503925423354" expanded="true" signature="1723:1837" ph="INSERT INTO posts... " />
+                <marker date="1503925423354" expanded="true" signature="1952:2019" ph="SELECT id FR... posts" />
+                <marker date="1503925423354" expanded="true" signature="3184:3242" ph="SELECT * FRO... posts" />
+                <marker date="1503925423354" expanded="true" signature="3356:3428" ph="SELECT post_... post_likes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topics.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/topics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <marker date="1503925915832" expanded="true" signature="260:318" ph="SELECT topic... posts" />
+                <marker date="1503925915832" expanded="true" signature="385:438" ph="SELECT * FRO... posts" />
               </folding>
             </state>
           </provider>
@@ -80,6 +96,7 @@
         <option value="$PROJECT_DIR$/my-account.php" />
         <option value="$PROJECT_DIR$/profil.php" />
         <option value="$PROJECT_DIR$/classes/Post.php" />
+        <option value="$PROJECT_DIR$/topics.php" />
       </list>
     </option>
   </component>
@@ -91,8 +108,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="44" />
-    <option name="y" value="508" />
+    <option name="x" value="-44" />
+    <option name="y" value="527" />
     <option name="width" value="1931" />
     <option name="height" value="376" />
   </component>
@@ -165,18 +182,18 @@
       <workItem from="1503643056276" duration="18703000" />
       <workItem from="1503900490454" duration="2398000" />
       <workItem from="1503903001970" duration="2912000" />
-      <workItem from="1503906906449" duration="15047000" />
+      <workItem from="1503906906449" duration="16618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48020000" />
+    <option name="totallyTimeSpent" value="49591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -194,25 +211,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -590,20 +588,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+        <state relative-caret-position="840">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1503924620726" expanded="true" signature="381:464" ph="INSERT INTO posts... " />
-            <marker date="1503924620726" expanded="true" signature="682:754" ph="SELECT user_... post_likes" />
-            <marker date="1503924620726" expanded="true" signature="831:878" ph="UPDATE posts... " />
-            <marker date="1503924620726" expanded="true" signature="932:999" ph="INSERT INTO post_likes... " />
-            <marker date="1503924620726" expanded="true" signature="1091:1138" ph="UPDATE posts... " />
-            <marker date="1503924620726" expanded="true" signature="1192:1256" ph="DELETE FROM " />
-            <marker date="1503924620726" expanded="true" signature="1582:1683" ph="INSERT INTO posts... " />
-            <marker date="1503924620726" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
-            <marker date="1503924620726" expanded="true" signature="2552:2610" ph="SELECT * FRO... posts" />
-            <marker date="1503924620726" expanded="true" signature="2724:2796" ph="SELECT post_... post_likes" />
+            <marker date="1503925423354" expanded="true" signature="428:539" ph="INSERT INTO posts... " />
+            <marker date="1503925423354" expanded="true" signature="460:538" ph="INSERT INTO posts... " />
+            <marker date="1503925423354" expanded="true" signature="460:539" ph="INSERT INTO posts... " />
+            <marker date="1503925423354" expanded="true" signature="777:849" ph="SELECT user_... post_likes" />
+            <marker date="1503925423354" expanded="true" signature="926:973" ph="UPDATE posts... " />
+            <marker date="1503925423354" expanded="true" signature="1027:1094" ph="INSERT INTO post_likes... " />
+            <marker date="1503925423354" expanded="true" signature="1186:1233" ph="UPDATE posts... " />
+            <marker date="1503925423354" expanded="true" signature="1287:1351" ph="DELETE FROM " />
+            <marker date="1503925423354" expanded="true" signature="1723:1788" ph="INSERT INTO posts... " />
+            <marker date="1503925423354" expanded="true" signature="1723:1837" ph="INSERT INTO posts... " />
+            <marker date="1503925423354" expanded="true" signature="1952:2019" ph="SELECT id FR... posts" />
+            <marker date="1503925423354" expanded="true" signature="3184:3242" ph="SELECT * FRO... posts" />
+            <marker date="1503925423354" expanded="true" signature="3356:3428" ph="SELECT post_... post_likes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <marker date="1503925915832" expanded="true" signature="260:318" ph="SELECT topic... posts" />
+            <marker date="1503925915832" expanded="true" signature="385:438" ph="SELECT * FRO... posts" />
           </folding>
         </state>
       </provider>
