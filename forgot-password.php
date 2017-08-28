@@ -19,6 +19,6 @@ if (isset($_POST['resetpassword'])) {
 ?>
 <h1>Zapomniane hasło</h1>
 <form action="forgot-password.php" method="post">
-    <input type="text" name="email" value="" placeholder="Email"><p />
+    <input type="text" name="email" value="" placeholder="Email"><p/>
     <input type="submit" name="resetpassword" value="Resetuj hasło">
 </form>
