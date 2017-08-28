@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d239ec24-cf8c-48f2-9a37-21df4a149558" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,88 +14,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profil.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profil.php">
+      <file leaf-file-name="my-account.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-              <folding>
-                <marker date="1503910811726" expanded="true" signature="288:339" ph="SELECT usern... users" />
-                <marker date="1503910811726" expanded="true" signature="415:466" ph="SELECT usern... users" />
-                <marker date="1503910811726" expanded="true" signature="555:600" ph="SELECT id FR... users" />
-                <marker date="1503910811726" expanded="true" signature="685:736" ph="SELECT verif... users" />
-                <marker date="1503910811726" expanded="true" signature="952:1008" ph="SELECT follo... followers" />
-                <marker date="1503910811726" expanded="true" signature="1075:1151" ph="INSERT INTO followers... " />
-                <marker date="1503910811726" expanded="true" signature="1409:1465" ph="SELECT follo... followers" />
-                <marker date="1503910811726" expanded="true" signature="1532:1605" ph="DELETE FROM " />
-                <marker date="1503910811726" expanded="true" signature="1773:1829" ph="SELECT follo... followers" />
-                <marker date="1503910811726" expanded="true" signature="2405:2495" ph="..." />
-                <marker date="1503910811726" expanded="true" signature="2767:2887" ph="..." />
-                <marker date="1503910811726" expanded="true" signature="2908:2941" ph="..." />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Post.php">
+      <file leaf-file-name="p;p" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p;p">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1503911070756" expanded="true" signature="381:464" ph="INSERT INTO posts... " />
-                <marker date="1503911070756" expanded="true" signature="682:754" ph="SELECT user_... post_likes" />
-                <marker date="1503911070756" expanded="true" signature="831:878" ph="UPDATE posts... " />
-                <marker date="1503911070756" expanded="true" signature="932:999" ph="INSERT INTO post_likes... " />
-                <marker date="1503911070756" expanded="true" signature="1091:1138" ph="UPDATE posts... " />
-                <marker date="1503911070756" expanded="true" signature="1192:1256" ph="DELETE FROM " />
-                <marker date="1503911070756" expanded="true" signature="1433:1491" ph="SELECT * FRO... posts" />
-                <marker date="1503911070756" expanded="true" signature="1605:1677" ph="SELECT post_... post_likes" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-              <folding>
-                <marker date="1503916006287" expanded="true" signature="498:700" ph="SELECT posts... users" />
-                <marker date="1503916006287" expanded="true" signature="884:956" ph="SELECT post_... post_likes" />
-                <marker date="1503916006287" expanded="true" signature="1295:1440" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Comment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <marker date="1503915928217" expanded="true" signature="327:364" ph="SELECT id FR... posts" />
-                <marker date="1503915928217" expanded="true" signature="476:578" ph="INSERT INTO comments... " />
-                <marker date="1503915928217" expanded="true" signature="756:872" ph="SELECT comme... comments" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <marker date="1503652509262" expanded="true" signature="210:261" ph="SELECT user_... login_tokens" />
-                <marker date="1503652509262" expanded="true" signature="345:396" ph="SELECT user_... login_tokens" />
-                <marker date="1503652509262" expanded="true" signature="713:769" ph="INSERT INTO login_tokens... " />
-                <marker date="1503652509262" expanded="true" signature="856:899" ph="DELETE FROM " />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,6 +55,8 @@
         <option value="$PROJECT_DIR$/classes/DB.php" />
         <option value="$PROJECT_DIR$/classes/Comment.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/p;p" />
+        <option value="$PROJECT_DIR$/my-account.php" />
       </list>
     </option>
   </component>
@@ -205,12 +142,12 @@
       <workItem from="1503643056276" duration="18703000" />
       <workItem from="1503900490454" duration="2398000" />
       <workItem from="1503903001970" duration="2912000" />
-      <workItem from="1503906906449" duration="7633000" />
+      <workItem from="1503906906449" duration="10599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40606000" />
+    <option name="totallyTimeSpent" value="43572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -453,20 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding>
-            <marker date="1503902689592" expanded="true" signature="238:289" ph="SELECT usern... users" />
-            <marker date="1503902689592" expanded="true" signature="379:430" ph="SELECT passw... users" />
-            <marker date="1503902689592" expanded="true" signature="661:672" ph="SELECT id Fr... " />
-            <marker date="1503902689592" expanded="true" signature="661:706" ph="SELECT id FR... users" />
-            <marker date="1503902689592" expanded="true" signature="774:842" ph="INSERT INTO login_tokens... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -511,29 +434,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1503911070756" expanded="true" signature="381:464" ph="INSERT INTO posts... " />
-            <marker date="1503911070756" expanded="true" signature="682:754" ph="SELECT user_... post_likes" />
-            <marker date="1503911070756" expanded="true" signature="831:878" ph="UPDATE posts... " />
-            <marker date="1503911070756" expanded="true" signature="932:999" ph="INSERT INTO post_likes... " />
-            <marker date="1503911070756" expanded="true" signature="1091:1138" ph="UPDATE posts... " />
-            <marker date="1503911070756" expanded="true" signature="1192:1256" ph="DELETE FROM " />
-            <marker date="1503911070756" expanded="true" signature="1433:1491" ph="SELECT * FRO... posts" />
-            <marker date="1503911070756" expanded="true" signature="1605:1677" ph="SELECT post_... post_likes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/DB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <marker date="1503916250046" expanded="true" signature="498:706" ph="SELECT posts... users" />
+            <marker date="1503916250046" expanded="true" signature="918:990" ph="SELECT post_... post_likes" />
+            <marker date="1503916250046" expanded="true" signature="1329:1474" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding>
+            <marker date="1503902689592" expanded="true" signature="238:289" ph="SELECT usern... users" />
+            <marker date="1503902689592" expanded="true" signature="379:430" ph="SELECT passw... users" />
+            <marker date="1503902689592" expanded="true" signature="661:672" ph="SELECT id Fr... " />
+            <marker date="1503902689592" expanded="true" signature="661:706" ph="SELECT id FR... users" />
+            <marker date="1503902689592" expanded="true" signature="774:842" ph="INSERT INTO login_tokens... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <marker date="1503915928217" expanded="true" signature="327:364" ph="SELECT id FR... posts" />
+            <marker date="1503915928217" expanded="true" signature="476:578" ph="INSERT INTO comments... " />
+            <marker date="1503915928217" expanded="true" signature="756:872" ph="SELECT comme... comments" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -571,27 +514,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Comment.php">
+    <entry file="file://$PROJECT_DIR$/classes/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <marker date="1503915928217" expanded="true" signature="327:364" ph="SELECT id FR... posts" />
-            <marker date="1503915928217" expanded="true" signature="476:578" ph="INSERT INTO comments... " />
-            <marker date="1503915928217" expanded="true" signature="756:872" ph="SELECT comme... comments" />
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1503911070756" expanded="true" signature="381:464" ph="INSERT INTO posts... " />
+            <marker date="1503911070756" expanded="true" signature="682:754" ph="SELECT user_... post_likes" />
+            <marker date="1503911070756" expanded="true" signature="831:878" ph="UPDATE posts... " />
+            <marker date="1503911070756" expanded="true" signature="932:999" ph="INSERT INTO post_likes... " />
+            <marker date="1503911070756" expanded="true" signature="1091:1138" ph="UPDATE posts... " />
+            <marker date="1503911070756" expanded="true" signature="1192:1256" ph="DELETE FROM " />
+            <marker date="1503911070756" expanded="true" signature="1433:1491" ph="SELECT * FRO... posts" />
+            <marker date="1503911070756" expanded="true" signature="1605:1677" ph="SELECT post_... post_likes" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/p;p">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-          <folding>
-            <marker date="1503916006287" expanded="true" signature="498:700" ph="SELECT posts... users" />
-            <marker date="1503916006287" expanded="true" signature="884:956" ph="SELECT post_... post_likes" />
-            <marker date="1503916006287" expanded="true" signature="1295:1440" ph="..." />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
