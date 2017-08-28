@@ -5,22 +5,21 @@
  * Date: 28.08.2017
  * Time: 13:02
  */
+include('./classes/DB.php');
+include('./classes/Login.php');
+include('./classes/Image.php');
+if (Login::isLoggedIn()) {
+    $userid = Login::isLoggedIn();
+} else {
+    die('Proszę się zalogować!');
+}
 if (isset($_POST['uploadprofileimg'])) {
-    $image = base64_encode(file_get_contents($_FILES['profileimg']['tmp_name']));
-    $options = array('http'=>array(
-        'method'=>"POST",
-        'header'=>"Authorization: Bearer b61fd72781aad421df507a86e03f4d27fc734356\n".
-            "Content-Type: application/x-www-form-urlencoded",
-        'content'=>$image
-    ));
-    $context = stream_context_create($options);
-    $imgurURL = "https://api.imgur.com/3/image";
-    $response = file_get_contents($imgurURL, false, $context);
+    Image::uploadImage('profileimg', "UPDATE users SET profileimg = :profileimg WHERE id=:userid", array(':userid'=>$userid));
 }
 ?>
-<h1>My Account</h1>
+<h1>Moje konto</h1>
 <form action="my-account.php" method="post" enctype="multipart/form-data">
-    Upload a profile image:
+    Prosze wgrać zdjęcie profilowe:
     <input type="file" name="profileimg">
-    <input type="submit" name="uploadprofileimg" value="Upload Image">
+    <input type="submit" name="uploadprofileimg" value="Wgraj">
 </form>

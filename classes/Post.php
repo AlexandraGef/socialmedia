@@ -31,17 +31,17 @@ class Post {
         $posts = "";
         foreach($dbposts as $p) {
             if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$p['id'], ':userid'=>$loggedInUserId))) {
-                $posts .= htmlspecialchars($p['body'])."
+                $posts .= "<img src='".$p['postimg']."'>".htmlspecialchars($p['body'])."
                                 <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='like' value='Lubie'>
+                                        <input type='submit' name='like' value='Lubię'>
                                         <span>".$p['likes']." polubień</span>
                                 </form>
                                 <hr /></br />
                                 ";
             } else {
-                $posts .= htmlspecialchars($p['body'])."
+                $posts .= "<img src='".$p['postimg']."'>".htmlspecialchars($p['body'])."
                                 <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='unlike' value='Nie lubie'>
+                                        <input type='submit' name='unlike' value='Nie lubię'>
                                         <span>".$p['likes']." polubień</span>
                                 </form>
                                 <hr /></br />
@@ -49,6 +49,18 @@ class Post {
             }
         }
         return $posts;
+    }
+    public static function createImgPost($postbody, $loggedInUserId, $profileUserId) {
+        if (strlen($postbody) > 160) {
+            die('Nieprawidłowa długość postu!');
+        }
+        if ($loggedInUserId == $profileUserId) {
+            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg) VALUES (:postbody, NOW(), :userid, 0, \'\')', array(':postbody'=>$postbody, ':userid'=>$profileUserId));
+            $postid = DB::query('SELECT id FROM posts WHERE user_id=:userid ORDER BY ID DESC LIMIT 1;', array(':userid'=>$loggedInUserId))[0]['id'];
+            return $postid;
+        } else {
+            die('Nieprawidłowy użytkownik!');
+        }
     }
 }
 ?>

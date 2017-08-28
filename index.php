@@ -8,7 +8,7 @@ if (Login::isLoggedIn()) {
     $userid = Login::isLoggedIn();
     $showTimeline = True;
 } else {
-    echo 'Not logged in';
+    echo 'Proszę się zalogować';
 }
 if (isset($_GET['postid'])) {
     Post::likePost($_GET['postid'], $userid);
@@ -25,15 +25,15 @@ foreach($followingposts as $post) {
     echo $post['body']." ~ ".$post['username'];
     echo "<form action='index.php?postid=".$post['id']."' method='post'>";
     if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$post['id'], ':userid'=>$userid))) {
-        echo "<input type='submit' name='like' value='Like'>";
+        echo "<input type='submit' name='like' value='Lubie'>";
     } else {
-        echo "<input type='submit' name='unlike' value='Unlike'>";
+        echo "<input type='submit' name='unlike' value='Nie lubie'>";
     }
-    echo "<span>".$post['likes']." likes</span>
+    echo "<span>".$post['likes']." polubień</span>
         </form>
         <form action='index.php?postid=".$post['id']."' method='post'>
         <textarea name='commentbody' rows='3' cols='50'></textarea>
-        <input type='submit' name='comment' value='Comment'>
+        <input type='submit' name='comment' value='Skomentuj'>
         </form>
         ";
     Comment::displayComments($post['id']);

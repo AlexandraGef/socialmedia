@@ -8,6 +8,7 @@
 include('./classes/DB.php');
 include('./classes/Login.php');
 include('./classes/Post.php');
+include('./classes/Image.php');
 $username = "";
 $isFollowing = False;
 $verified = False;
@@ -37,14 +38,19 @@ if (isset($_GET['username'])) {
             $isFollowing = True;
         }
         if (isset($_POST['post'])) {
-            Post::createPost($_POST['postbody'], Login::isLoggedIn(), $userid);
+            if ($_FILES['postimg']['size'] == 0) {
+                Post::createPost($_POST['postbody'], Login::isLoggedIn(), $userid);
+            } else {
+                $postid = Post::createImgPost($_POST['postbody'], Login::isLoggedIn(), $userid);
+                Image::uploadImage('postimg', "UPDATE posts SET postimg=:postimg WHERE id=:postid", array(':postid'=>$postid));
+            }
         }
         if (isset($_GET['postid'])) {
             Post::likePost($_GET['postid'], $followerid);
         }
         $posts = Post::displayPosts($userid, $username, $followerid);
     } else {
-        die('Nie zanleziono użytkownika!');
+        die('User not found!');
     }
 }
 ?>
@@ -60,12 +66,12 @@ if (isset($_GET['username'])) {
     }
     ?>
 </form>
-</form>
-<form action="profil.php?username=<?php echo $username; ?>" method="post">
+<form action="profil.php?username=<?php echo $username; ?>" method="post" enctype="multipart/form-data">
     <textarea name="postbody" rows="8" cols="80"></textarea>
-    <input type="submit" name="post" value="Post">
+    <br />Wgraj zdjęcie:
+    <input type="file" name="postimg">
+    <input type="submit" name="post" value="Wyślij">
 </form>
-
 <div class="posts">
     <?php echo $posts; ?>
 </div>
