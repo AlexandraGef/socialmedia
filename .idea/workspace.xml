@@ -59,11 +59,26 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="800">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
-                <marker date="1503914408270" expanded="true" signature="353:555" ph="SELECT posts... users" />
-                <marker date="1503914408270" expanded="true" signature="739:811" ph="SELECT post_... post_likes" />
+                <marker date="1503916006287" expanded="true" signature="498:700" ph="SELECT posts... users" />
+                <marker date="1503916006287" expanded="true" signature="884:956" ph="SELECT post_... post_likes" />
+                <marker date="1503916006287" expanded="true" signature="1295:1440" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <marker date="1503915928217" expanded="true" signature="327:364" ph="SELECT id FR... posts" />
+                <marker date="1503915928217" expanded="true" signature="476:578" ph="INSERT INTO comments... " />
+                <marker date="1503915928217" expanded="true" signature="756:872" ph="SELECT comme... comments" />
               </folding>
             </state>
           </provider>
@@ -103,6 +118,7 @@
         <option value="$PROJECT_DIR$/profil.php" />
         <option value="$PROJECT_DIR$/classes/Post.php" />
         <option value="$PROJECT_DIR$/classes/DB.php" />
+        <option value="$PROJECT_DIR$/classes/Comment.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -114,9 +130,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-19" />
-    <option name="y" value="84" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-20" />
+    <option name="y" value="554" />
     <option name="width" value="1931" />
     <option name="height" value="376" />
   </component>
@@ -189,15 +205,15 @@
       <workItem from="1503643056276" duration="18703000" />
       <workItem from="1503900490454" duration="2398000" />
       <workItem from="1503903001970" duration="2912000" />
-      <workItem from="1503906906449" duration="6813000" />
+      <workItem from="1503906906449" duration="7633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39786000" />
+    <option name="totallyTimeSpent" value="40606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -555,13 +571,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <marker date="1503915928217" expanded="true" signature="327:364" ph="SELECT id FR... posts" />
+            <marker date="1503915928217" expanded="true" signature="476:578" ph="INSERT INTO comments... " />
+            <marker date="1503915928217" expanded="true" signature="756:872" ph="SELECT comme... comments" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="800">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
-            <marker date="1503914408270" expanded="true" signature="353:555" ph="SELECT posts... users" />
-            <marker date="1503914408270" expanded="true" signature="739:811" ph="SELECT post_... post_likes" />
+            <marker date="1503916006287" expanded="true" signature="498:700" ph="SELECT posts... users" />
+            <marker date="1503916006287" expanded="true" signature="884:956" ph="SELECT post_... post_likes" />
+            <marker date="1503916006287" expanded="true" signature="1295:1440" ph="..." />
           </folding>
         </state>
       </provider>
