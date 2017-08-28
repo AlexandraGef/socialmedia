@@ -37,6 +37,13 @@ if (isset($_GET['username'])) {
         if (DB::query('SELECT follower_id FROM followers WHERE user_id=:user_id', array(':user_id' => $userid))) {
             $isFollowing = True;
         }
+        if (isset($_POST['deletepost'])) {
+            if (DB::query('SELECT id FROM posts WHERE id=:postid AND user_id=:userid', array(':postid'=>$_GET['postid'], ':userid'=>$followerid))) {
+                DB::query('DELETE FROM posts WHERE id=:postid and user_id=:userid', array(':postid'=>$_GET['postid'], ':userid'=>$followerid));
+                DB::query('DELETE FROM post_likes WHERE post_id=:postid', array(':postid'=>$_GET['postid']));
+
+            }
+        }
         if (isset($_POST['post'])) {
             if ($_FILES['postimg']['size'] == 0) {
                 Post::createPost($_POST['postbody'], Login::isLoggedIn(), $userid);
@@ -45,12 +52,12 @@ if (isset($_GET['username'])) {
                 Image::uploadImage('postimg', "UPDATE posts SET postimg=:postimg WHERE id=:postid", array(':postid'=>$postid));
             }
         }
-        if (isset($_GET['postid'])) {
+        if (isset($_GET['postid']) && !isset($_POST['deletepost'])) {
             Post::likePost($_GET['postid'], $followerid);
         }
         $posts = Post::displayPosts($userid, $username, $followerid);
     } else {
-        die('User not found!');
+        die('Nie znaleziono użytkownika!');
     }
 }
 ?>

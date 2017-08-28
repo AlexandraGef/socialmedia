@@ -75,18 +75,26 @@ class Post {
             if (!DB::query('SELECT post_id FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$p['id'], ':userid'=>$loggedInUserId))) {
                 $posts .= "<img src='".$p['postimg']."'>".self::link_add($p['body'])."
                                 <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='like' value='Like'>
-                                        <span>".$p['likes']." likes</span>
-                                </form>
-                                <hr /></br />
+                                        <input type='submit' name='like' value='Lubię'>
+                                        <span>".$p['likes']." polubień</span>
+                                ";
+                if ($userid == $loggedInUserId) {
+                    $posts .= "<input type='submit' name='deletepost' value='x' />";
+                }
+                $posts .= "
+                                </form><hr /></br />
                                 ";
             } else {
                 $posts .= "<img src='".$p['postimg']."'>".self::link_add($p['body'])."
                                 <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                        <input type='submit' name='unlike' value='Unlike'>
-                                        <span>".$p['likes']." likes</span>
-                                </form>
-                                <hr /></br />
+                                <input type='submit' name='unlike' value='Nie lubie'>
+                                <span>".$p['likes']." polubień</span>
+                                ";
+                if ($userid == $loggedInUserId) {
+                    $posts .= "<input type='submit' name='deletepost' value='x' />";
+                }
+                $posts .= "
+                                </form><hr /></br />
                                 ";
             }
         }
