@@ -9,15 +9,25 @@
 class Post {
     public static function createPost($postbody, $loggedInUserId, $profileUserId) {
         if (strlen($postbody) > 160 || strlen($postbody) < 1) {
-            die('Nieprawidłowa długość postu!');
+            die('Incorrect length!');
         }
         $topics = self::getTopics($postbody);
         if ($loggedInUserId == $profileUserId) {
+            if (count(self::notify($postbody)) != 0) {
+                foreach (self::notify($postbody) as $key => $n) {
+                    $s = $loggedInUserId;
+                    $r = DB::query('SELECT id FROM users WHERE username=:username', array(':username'=>$key))[0]['id'];
+                    if ($r != 0) {
+                        DB::query('INSERT INTO notifications (type, receiver, sender) VALUES (:type, :receiver, :sender)', array(':type'=>$n, ':receiver'=>$r, ':sender'=>$s));
+                    }
+                }
+            }
             DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:postbody, NOW(), :userid, 0, \'\', :topics)', array(':postbody'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
         } else {
             die('Nieprawidłowy użytkownik!');
         }
     }
+
     public static function createImgPost($postbody, $loggedInUserId, $profileUserId) {
         if (strlen($postbody) > 160) {
             die('Nieprawidłowa długość postu!');
@@ -40,6 +50,17 @@ class Post {
             DB::query('DELETE FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$postId, ':userid'=>$likerId));
         }
     }
+    public static function notify($text) {
+        $text = explode(" ", $text);
+        $notify = array();
+        foreach ($text as $word) {
+            if (substr($word, 0, 1) == "@") {
+                $notify[substr($word, 1)] = 1;
+            }
+        }
+        return $notify;
+    }
+
     public static function getTopics($text) {
         $text = explode(" ", $text);
         $topics = "";

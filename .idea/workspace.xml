@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d239ec24-cf8c-48f2-9a37-21df4a149558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Post.php" afterPath="$PROJECT_DIR$/classes/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profil.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="1120">
               <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding>
                 <marker date="1503988842873" expanded="true" signature="320:371" ph="SELECT usern... users" />
@@ -39,6 +37,42 @@
                 <marker date="1503988842873" expanded="true" signature="3793:3883" ph="..." />
                 <marker date="1503988842873" expanded="true" signature="4178:4368" ph="..." />
                 <marker date="1503988842873" expanded="true" signature="4389:4422" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <marker date="1503991439054" expanded="true" signature="263:313" ph="SELECT * FRO... notifications" />
+                <marker date="1503991439054" expanded="true" signature="378:428" ph="SELECT * FRO... notifications" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/Post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+              <folding>
+                <marker date="1503992346127" expanded="true" signature="592:637" ph="SELECT id FR... users" />
+                <marker date="1503992346127" expanded="true" signature="746:831" ph="INSERT INTO notifications... " />
+                <marker date="1503992346127" expanded="true" signature="964:1081" ph="INSERT INTO posts... " />
+                <marker date="1503992346127" expanded="true" signature="1546:1663" ph="INSERT INTO posts... " />
+                <marker date="1503992346127" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
+                <marker date="1503992346127" expanded="true" signature="2082:2154" ph="SELECT user_... post_likes" />
+                <marker date="1503992346127" expanded="true" signature="2231:2278" ph="UPDATE posts... " />
+                <marker date="1503992346127" expanded="true" signature="2332:2399" ph="INSERT INTO post_likes... " />
+                <marker date="1503992346127" expanded="true" signature="2491:2538" ph="UPDATE posts... " />
+                <marker date="1503992346127" expanded="true" signature="2592:2656" ph="DELETE FROM " />
+                <marker date="1503992346127" expanded="true" signature="4021:4079" ph="SELECT * FRO... posts" />
+                <marker date="1503992346127" expanded="true" signature="4193:4265" ph="SELECT post_... post_likes" />
               </folding>
             </state>
           </provider>
@@ -68,6 +102,7 @@
         <option value="$PROJECT_DIR$/my-account.php" />
         <option value="$PROJECT_DIR$/topics.php" />
         <option value="$PROJECT_DIR$/profil.php" />
+        <option value="$PROJECT_DIR$/notify.php" />
         <option value="$PROJECT_DIR$/classes/Post.php" />
       </list>
     </option>
@@ -79,9 +114,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-44" />
-    <option name="y" value="527" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-59" />
+    <option name="y" value="572" />
     <option name="width" value="1931" />
     <option name="height" value="376" />
   </component>
@@ -156,16 +191,15 @@
       <workItem from="1503903001970" duration="2912000" />
       <workItem from="1503906906449" duration="17805000" />
       <workItem from="1503927497743" duration="177000" />
-      <workItem from="1503986979189" duration="2497000" />
+      <workItem from="1503986979189" duration="5477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53452000" />
+    <option name="totallyTimeSpent" value="56432000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -243,16 +277,18 @@
         <state relative-caret-position="1420">
           <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
           <folding>
-            <marker date="1503989723758" expanded="true" signature="427:544" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1008:1125" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1240:1307" ph="SELECT id FR... posts" />
-            <marker date="1503989723758" expanded="true" signature="1544:1616" ph="SELECT user_... post_likes" />
-            <marker date="1503989723758" expanded="true" signature="1693:1740" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="1794:1861" ph="INSERT INTO post_likes... " />
-            <marker date="1503989723758" expanded="true" signature="1953:2000" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="2054:2118" ph="DELETE FROM " />
-            <marker date="1503989723758" expanded="true" signature="3193:3251" ph="SELECT * FRO... posts" />
-            <marker date="1503989723758" expanded="true" signature="3365:3437" ph="SELECT post_... post_likes" />
+            <marker date="1503992346127" expanded="true" signature="592:637" ph="SELECT id FR... users" />
+            <marker date="1503992346127" expanded="true" signature="746:831" ph="INSERT INTO notifications... " />
+            <marker date="1503992346127" expanded="true" signature="964:1081" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1546:1663" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
+            <marker date="1503992346127" expanded="true" signature="2082:2154" ph="SELECT user_... post_likes" />
+            <marker date="1503992346127" expanded="true" signature="2231:2278" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2332:2399" ph="INSERT INTO post_likes... " />
+            <marker date="1503992346127" expanded="true" signature="2491:2538" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2592:2656" ph="DELETE FROM " />
+            <marker date="1503992346127" expanded="true" signature="4021:4079" ph="SELECT * FRO... posts" />
+            <marker date="1503992346127" expanded="true" signature="4193:4265" ph="SELECT post_... post_likes" />
           </folding>
         </state>
       </provider>
@@ -308,16 +344,18 @@
         <state relative-caret-position="1420">
           <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
           <folding>
-            <marker date="1503989723758" expanded="true" signature="427:544" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1008:1125" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1240:1307" ph="SELECT id FR... posts" />
-            <marker date="1503989723758" expanded="true" signature="1544:1616" ph="SELECT user_... post_likes" />
-            <marker date="1503989723758" expanded="true" signature="1693:1740" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="1794:1861" ph="INSERT INTO post_likes... " />
-            <marker date="1503989723758" expanded="true" signature="1953:2000" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="2054:2118" ph="DELETE FROM " />
-            <marker date="1503989723758" expanded="true" signature="3193:3251" ph="SELECT * FRO... posts" />
-            <marker date="1503989723758" expanded="true" signature="3365:3437" ph="SELECT post_... post_likes" />
+            <marker date="1503992346127" expanded="true" signature="592:637" ph="SELECT id FR... users" />
+            <marker date="1503992346127" expanded="true" signature="746:831" ph="INSERT INTO notifications... " />
+            <marker date="1503992346127" expanded="true" signature="964:1081" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1546:1663" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
+            <marker date="1503992346127" expanded="true" signature="2082:2154" ph="SELECT user_... post_likes" />
+            <marker date="1503992346127" expanded="true" signature="2231:2278" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2332:2399" ph="INSERT INTO post_likes... " />
+            <marker date="1503992346127" expanded="true" signature="2491:2538" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2592:2656" ph="DELETE FROM " />
+            <marker date="1503992346127" expanded="true" signature="4021:4079" ph="SELECT * FRO... posts" />
+            <marker date="1503992346127" expanded="true" signature="4193:4265" ph="SELECT post_... post_likes" />
           </folding>
         </state>
       </provider>
@@ -548,28 +586,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Post.php">
+    <entry file="file://$PROJECT_DIR$/notify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="26" column="139" lean-forward="false" selection-start-line="26" selection-start-column="139" selection-end-line="26" selection-end-column="139" />
+        <state relative-caret-position="120">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <marker date="1503989723758" expanded="true" signature="427:544" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1008:1125" ph="INSERT INTO posts... " />
-            <marker date="1503989723758" expanded="true" signature="1240:1307" ph="SELECT id FR... posts" />
-            <marker date="1503989723758" expanded="true" signature="1544:1616" ph="SELECT user_... post_likes" />
-            <marker date="1503989723758" expanded="true" signature="1693:1740" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="1794:1861" ph="INSERT INTO post_likes... " />
-            <marker date="1503989723758" expanded="true" signature="1953:2000" ph="UPDATE posts... " />
-            <marker date="1503989723758" expanded="true" signature="2054:2118" ph="DELETE FROM " />
-            <marker date="1503989723758" expanded="true" signature="3193:3251" ph="SELECT * FRO... posts" />
-            <marker date="1503989723758" expanded="true" signature="3365:3437" ph="SELECT post_... post_likes" />
+            <marker date="1503991439054" expanded="true" signature="263:313" ph="SELECT * FRO... notifications" />
+            <marker date="1503991439054" expanded="true" signature="378:428" ph="SELECT * FRO... notifications" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="1120">
           <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding>
             <marker date="1503988842873" expanded="true" signature="320:371" ph="SELECT usern... users" />
@@ -590,6 +620,27 @@
             <marker date="1503988842873" expanded="true" signature="3793:3883" ph="..." />
             <marker date="1503988842873" expanded="true" signature="4178:4368" ph="..." />
             <marker date="1503988842873" expanded="true" signature="4389:4422" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+          <folding>
+            <marker date="1503992346127" expanded="true" signature="592:637" ph="SELECT id FR... users" />
+            <marker date="1503992346127" expanded="true" signature="746:831" ph="INSERT INTO notifications... " />
+            <marker date="1503992346127" expanded="true" signature="964:1081" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1546:1663" ph="INSERT INTO posts... " />
+            <marker date="1503992346127" expanded="true" signature="1778:1845" ph="SELECT id FR... posts" />
+            <marker date="1503992346127" expanded="true" signature="2082:2154" ph="SELECT user_... post_likes" />
+            <marker date="1503992346127" expanded="true" signature="2231:2278" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2332:2399" ph="INSERT INTO post_likes... " />
+            <marker date="1503992346127" expanded="true" signature="2491:2538" ph="UPDATE posts... " />
+            <marker date="1503992346127" expanded="true" signature="2592:2656" ph="DELETE FROM " />
+            <marker date="1503992346127" expanded="true" signature="4021:4079" ph="SELECT * FRO... posts" />
+            <marker date="1503992346127" expanded="true" signature="4193:4265" ph="SELECT post_... post_likes" />
           </folding>
         </state>
       </provider>
