@@ -12,9 +12,21 @@ class Post {
             die('Nieprawidłowa długość postu!');
         }
         $topics = self::getTopics($postbody);
-
         if ($loggedInUserId == $profileUserId) {
-            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:body, NOW(), :userid, 0,\'\',:topics)', array(':body'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
+            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:postbody, NOW(), :userid, 0, \'\', :topics)', array(':postbody'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
+        } else {
+            die('Nieprawidłowy użytkownik!');
+        }
+    }
+    public static function createImgPost($postbody, $loggedInUserId, $profileUserId) {
+        if (strlen($postbody) > 160) {
+            die('Nieprawidłowa długość postu!');
+        }
+        $topics = self::getTopics($postbody);
+        if ($loggedInUserId == $profileUserId) {
+            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:postbody, NOW(), :userid, 0, \'\', :topics)', array(':postbody'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
+            $postid = DB::query('SELECT id FROM posts WHERE user_id=:userid ORDER BY ID DESC LIMIT 1;', array(':userid'=>$loggedInUserId))[0]['id'];
+            return $postid;
         } else {
             die('Nieprawidłowy użytkownik!');
         }
@@ -28,21 +40,6 @@ class Post {
             DB::query('DELETE FROM post_likes WHERE post_id=:postid AND user_id=:userid', array(':postid'=>$postId, ':userid'=>$likerId));
         }
     }
-
-    public static function createImgPost($postbody, $loggedInUserId, $profileUserId) {
-        if (strlen($postbody) > 160) {
-            die('Nieprawidłowa długość postu!');
-        }
-        $topics = self::getTopics($postbody);
-        if ($loggedInUserId == $profileUserId) {
-            DB::query('INSERT INTO posts (body,posted_at,user_id, likes,postimg,topics) VALUES (:postbody, NOW(), :userid, 0, \'\', \'\')', array(':postbody'=>$postbody, ':userid'=>$profileUserId, ':topics'=>$topics));
-            $postid = DB::query('SELECT id FROM posts WHERE user_id=:userid ORDER BY ID DESC LIMIT 1;', array(':userid'=>$loggedInUserId))[0]['id'];
-            return $postid;
-        } else {
-            die('Nieprawidłowy użytkownik!');
-        }
-    }
-
     public static function getTopics($text) {
         $text = explode(" ", $text);
         $topics = "";
@@ -67,7 +64,6 @@ class Post {
         }
         return $newstring;
     }
-
     public static function displayPosts($userid, $username, $loggedInUserId) {
         $dbposts = DB::query('SELECT * FROM posts WHERE user_id=:userid ORDER BY id DESC', array(':userid'=>$userid));
         $posts = "";
@@ -87,7 +83,7 @@ class Post {
             } else {
                 $posts .= "<img src='".$p['postimg']."'>".self::link_add($p['body'])."
                                 <form action='profil.php?username=$username&postid=".$p['id']."' method='post'>
-                                <input type='submit' name='unlike' value='Nie lubie'>
+                                <input type='submit' name='unlike' value='Nie lubię'>
                                 <span>".$p['likes']." polubień</span>
                                 ";
                 if ($userid == $loggedInUserId) {
@@ -102,3 +98,5 @@ class Post {
     }
 }
 ?>
+
+
